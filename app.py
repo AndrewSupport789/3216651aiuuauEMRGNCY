@@ -164,8 +164,5 @@ async def on_ready():
 @tasks.loop(seconds=5)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
-                                 status=discord.Status('idle'),
-                                 afk=True)
-    await client.send_message(ctx.message.channel, 'Bot is Idle')
-    
+
 client.run(os.getenv('BOT_TOKEN'))
