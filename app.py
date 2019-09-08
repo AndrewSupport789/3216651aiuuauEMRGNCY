@@ -1,4 +1,4 @@
-# Work with Python xxx
+# Work with Py xxx
 import discord
 from discord.ext import commands, tasks
 import os
