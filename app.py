@@ -1,4 +1,4 @@
-# Work with Python xxx
+# Work with Py xxx
 import discord
 from discord.ext import commands, tasks
 import os
@@ -48,22 +48,45 @@ async def on_ready():
 @client.event
 async def on_message(message):
     message.content = message.content.lower().replace(' ', '')
+    msg = '```Check your DMs man!```'
     if message.content.startswith("!hello"):
         print(message.author.name)
         embed = discord.Embed(color=0xFF09D7)
-        embed.add_field(name="text", value="https://direct-link.net/27527/spotify3", inline=False)
-        embed.add_field(name="Link #2:", value="https://direct-link.net/27527/spotify4", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+     
+    if message.content.startswith("!invite"):
+        print(message.author.name)
+        msg = 'I sent invite link into your DMs man!'
+        embed = discord.Embed(color=0xFF09D7)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+        await message.author.send(embed=embed) 
+        await message.channel.send(msg)
+        
+    if message.content.startswith("!stock"):
+        print(message.author.name)
+        msg = 'Check DMs!'
+        embed = discord.Embed(color=0xFF09D7)
+        embed.add_field(name="I can't display stock but you can check my #gen-announcmenets channel on my server, if you aren't on my server here is invite link tho", value="https://discord.gg/2ZnMK4m", inline=False)
+        await message.author.send(embed=embed) 
+        await message.channel.send(msg)
+        
+    if message.content.startswith("!scribd"):
+        print(message.author.name)
+        msg = '```Check your DMs man!```'
+        embed = discord.Embed(title="`Scrib acc`", color=0x840055)
+        embed.add_field(name="Your link:", value="https://direct-link.net/27527/Scribd", inline=False)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
+        await message.author.send(embed=embed)
+        await message.channel.send(msg)
         
     if message.content.startswith("!nord"):
         print(message.author.name)
         embed = discord.Embed(title="`NordVPN acc`", color=0xFF09D7)
         embed.add_field(name="Your link:", value="https://filemedia.net/27527/NordVPN", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
-        await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.author.send(embed=embed)  
+        await message.channel.send(msg)        
         
     if message.content.startswith("!cmds"):
         print(message.author.name)
@@ -71,7 +94,7 @@ async def on_message(message):
         embed.add_field(name="Visit my website for list of commands:", value="http://rabbit001.cf/commands.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
         
     if message.content.startswith("!commands"):
         print(message.author.name)
@@ -79,6 +102,7 @@ async def on_message(message):
         embed.add_field(name="Visit my website for list of commands:", value="http://rabbit001.cf/commands.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
+        await message.channel.send(msg)
 
         
     if message.content.startswith("!minecrafts"):
@@ -89,7 +113,7 @@ async def on_message(message):
         embed.add_field(name="Link #3:", value="https://up-to-down.net/27527/minecrafts", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
         
 
     if message.content.startswith("!hulu"):
@@ -99,7 +123,7 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://filemedia.net/27527/hulu", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
         
         
     if message.content.startswith("!origin"):
@@ -109,7 +133,7 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://direct-link.net/27527/Origin3", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordappf.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
 
     if message.content.startswith("!uplay"):
         print(message.author.name)
@@ -117,7 +141,7 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://up-to-down.net/27527/uplay", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
 
     if message.content.startswith("!fortnite"):
         print(message.author.name)
@@ -126,23 +150,23 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://filemedia.net/27527/fortnite2", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
         
     if message.content.startswith("!steam"):
         print(message.author.name)
         embed = discord.Embed(title="`Steam acc`", color=0x796666)
         embed.add_field(name="Your link:", value="https://filemedia.net/27527/Steam", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
-        await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.author.send(embed=embed) 
+        await message.channel.send(msg)
         
     if message.content.startswith("!spotify"):
         print(message.author.name)
         embed = discord.Embed(title="`Spotify acc`", color=0x996666)
         embed.add_field(name="Your link:", value="https://direct-link.net/27527/spotify4", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
-        await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.author.send(embed=embed) 
+        await message.channel.send(msg)
         
     if message.content.startswith("!udemy"):
         print(message.author.name)
@@ -151,15 +175,8 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://up-to-down.net/27527/udemy", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
-        
-    if message.content.startswith("!scribd"):
-        print(message.author.name)
-        embed = discord.Embed(title="`Scrib acc`", color=0x840055)
-        embed.add_field(name="Your link:", value="https://direct-link.net/27527/Scribd", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
-        await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
+
         
     if message.content.startswith("!pinterest"):
         print(message.author.name)
@@ -167,7 +184,7 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://link-to.net/27527/pinterest", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
         
     if message.content.startswith("!familyowner"):
         print(message.author.name)
@@ -175,7 +192,8 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://direct-link.net/27527/familyowner", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-	await message.channel.send(msg)
+        await message.channel.send(msg)
+
    
 @client.event
 async def on_ready():
@@ -183,10 +201,26 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
+    print(' ____  _            _    ____       _     _     _ _    ___   ___  _')
+    print('| __ )| | __ _  ___| | _|  _ \ __ _| |__ | |__ (_) |_ / _ \ / _ \/ |')
+    print('|  _ \| |/ _` |/ __| |/ / |_) / _` |  _ \|  _ \| | __| | | | | | | |')
+    print('| |_) | | (_| | (__|   <|  _ < (_| | |_) | |_) | | |_| |_| | |_| | |')
+    print('|____/|_|\__,_|\___|_|\_\_| \_\__,_|_.__/|_.__/|_|\__|\___/ \___/|_|')
+    print('====================================================================')
+    print('“Hacking is a talent. You will not learn it at school. It is like being Messi or C.Ronaldo.')
+    print('If you were born to become a Hacker, it is your destiny. Otherwise, you will be Hacked.”')
+    print('― Amine Essiraj')
+    print('===========================================================================================')
+    print('“Shvatio sam… Da nema čoveka, kompjuter ne bi postojao. Da nema kompjutera,')
+    print('mnogi ljudi ne bi naučili šta znači biti čovek.”')
+    print('― Tamara Kučan, PROFAJLER')
+    print('===========================================================================')
+    print('Never tell everything you know...')
+    print('=================================')
     change_status.start()
 
 @tasks.loop(seconds=5)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-client.run(os.getenv('BOT_TOKEN'))
+client.run('NTgzNjkyMzI4MDUzNjM3MTMx.XXODjg.6fnXnl25GBRNEumeoIu-drbkpmU')
