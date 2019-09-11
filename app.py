@@ -223,4 +223,4 @@ async def on_ready():
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-client.run('NTgzNjkyMzI4MDUzNjM3MTMx.XXODjg.6fnXnl25GBRNEumeoIu-drbkpmU')
+client.run(os.getenv('BOT_TOKEN'))
