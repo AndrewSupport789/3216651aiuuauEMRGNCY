@@ -105,7 +105,7 @@ async def on_message(message):
         print(message.author.name)
         msg = '```Check your DMs man!```'
         embed = discord.Embed(title="`Grammarly acc`", color=0x840055)
-        embed.add_field(name="Your link:", value="https://throwbin.io/o4XIhAC", inline=False)
+        embed.add_field(name="Your link:", value="https://direct-link.net/27527/grammarly", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
