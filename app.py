@@ -87,7 +87,7 @@ async def on_message(message):
  if message.content.startswith("!cmds"):
         print(message.author.name)
         embed = discord.Embed(title="**COMMANDS**", color=0xFF09D7)
-        embed.add_field(name="Visit my website for list of commands:", value="https://badrabbit001.000webhostapp.com/commands.html", inline=False)
+        embed.add_field(name="Visit my website for list of commands:", value="http://bit.ly/gen_commands", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
@@ -96,7 +96,7 @@ async def on_message(message):
  if message.content.startswith("!commands"):
         print(message.author.name)
         embed = discord.Embed(title="**COMMANDS**", color=0xFF09D7)
-        embed.add_field(name="Visit my website for list of commands:", value="https://badrabbit001.000webhostapp.com/commands.html", inline=False)
+        embed.add_field(name="Visit my website for list of commands:", value="http://bit.ly/gen_commands", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
