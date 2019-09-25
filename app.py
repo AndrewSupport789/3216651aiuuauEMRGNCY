@@ -109,6 +109,15 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
+		        
+ if message.content.startswith("!eset"):
+        print(message.author.name)
+        msg = '```Check your DMs man!```'
+        embed = discord.Embed(title="`Eset keys:`", color=0x840055)
+        embed.add_field(name="Your link:", value="https://link-to.net/27527/esetkeys", inline=False)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
+        await message.author.send(embed=embed)
+        await message.channel.send('Check your DMs!')
         
  if message.content.startswith("!minecraft"):
         print(message.author.name)
