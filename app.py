@@ -10,6 +10,7 @@ from discord.utils import get
 from discord import Game
 import os
 
+reminder = 'Do not forget try all links for all accounts!'
 
 msgg = '```Check your DMs man!```'
 
@@ -112,10 +113,11 @@ async def on_message(message):
 		        
  if message.content.startswith("!eset"):
         print(message.author.name)
-        msg = '```Check your DMs man!```'
-        embed = discord.Embed(title="`Eset keys:`", color=0x840055)
+        embed = discord.Embed(title="`Eset keys`", color=0x400cc1)
         embed.add_field(name="Your link:", value="https://link-to.net/27527/esetkeys", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/EsetKeys2txt", inline=False)
+        embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
         
@@ -134,13 +136,13 @@ async def on_message(message):
  if message.content.startswith("!hulu"):
         print(message.author.name)
         embed = discord.Embed(title="`Hulu acc`", color=0x400cc1)
-        embed.add_field(name="Your link:", value="https://link-to.net/27527/hulu2", inline=False)
-        embed.add_field(name="Link #2:", value="https://link-to.net/27527/hulu", inline=False)
+        embed.add_field(name="Your link:", value="https://link-to.net/27527/hulu", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/hulu2", inline=False)
+        embed.add_field(name="Link #3:", value="https://link-to.net/27527/Hulu3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
-		
 				        
  if message.content.startswith("!origin"):
         print(message.author.name)
@@ -157,6 +159,8 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="`Uplay acc`", color=0x400cc1)
         embed.add_field(name="Your link:", value="https://link-to.net/27527/uplay", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/uplay2", inline=False)
+        embed.add_field(name="Link #3:", value="https://link-to.net/27527/Uplay3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
@@ -166,6 +170,7 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="`Steam acc`", color=0x400cc1)
         embed.add_field(name="Your link:", value="https://link-to.net/27527/Steam", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/Steam2", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
@@ -197,10 +202,13 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="`NordVPN acc`", color=0x400cc1)
         embed.add_field(name="Your link:", value="https://link-to.net/27527/NordVPN", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/NordVPN2", inline=False)
+        embed.add_field(name="Link #3:", value="https://link-to.net/27527/NordVPN3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
+        await message.channel.send(reminder)
    						        
  if message.content.startswith("!pinterest"):
         print(message.author.name)
@@ -210,7 +218,9 @@ async def on_message(message):
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')   		
 
-   
+
+#embed.add_field(name="link #2:", value="https://link-to.net/27527/pinterest", inline=False)
+		
 @client.event
 async def on_ready():
     print('Logged in as')
