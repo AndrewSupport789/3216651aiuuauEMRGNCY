@@ -120,6 +120,16 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!')
+			        
+ if message.content.startswith("!crunchyroll"):
+        print(message.author.name)
+        embed = discord.Embed(title="Crunchyroll accs`", color=0x400cc1)
+        embed.add_field(name="Your link:", value="https://link-to.net/27527/crunchyroll", inline=False)
+        embed.add_field(name="Link #2:", value="https://link-to.net/27527/crunchyroll2", inline=False)
+        embed.add_field(name="__**Tutorial:**__", value="http://rabbit001.cf/tutorial/video.html", inline=False)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+        await message.author.send(embed=embed)
+        await message.channel.send('Check your DMs!')
         
  if message.content.startswith("!minecraft"):
         print(message.author.name)
