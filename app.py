@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands, tasks
 import os
 import asyncio
+from discord import Activity, ActivityType
 import random
 import time
 from itertools import cycle
@@ -36,16 +37,6 @@ async def ban(ctx):
         await ctx.send("You can't use this!")
 
 
-@client.event
-async def on_ready():
-    print("=======================================")
-    print()
-    print("Hello BlackRabbit#3981")
-    print("client id :", client.user.id)
-    print()
-    print("=======================================")
-    game = discord.Game("")
-    await client.change_presence(status=discord.Status.online, activity=game)
 
 
 @client.event
@@ -255,8 +246,10 @@ async def on_ready():
     print('=================================')
     change_status.start()
 
-@tasks.loop(seconds=5)
-async def change_status():
-    await client.change_presence(activity=discord.Game(next(status)))
-
+@client.event
+async def on_ready():
+    await client.wait_until_ready()
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)} servers! | !𝙘𝙢𝙙 | 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))
+	
 client.run(os.getenv('BOT_TOKEN'))
