@@ -249,7 +249,7 @@ async def on_ready():
 @client.event
 async def on_ready():
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)} servers|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
                                                 type=ActivityType.watching))
 	
 client.run(os.getenv('BOT_TOKEN'))
