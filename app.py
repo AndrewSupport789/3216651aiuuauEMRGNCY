@@ -47,7 +47,46 @@ async def on_message(message):
         embed = discord.Embed(color=0xFF09D7)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
- 
+        
+        
+ if message.content.startswith("!p_up"):
+    print(message.author.name)
+    print('****=======Update presence=========****')
+    await client.wait_until_ready()
+    await message.channel.send('Done, updated!')
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))
+                                                
+                                                        
+ if message.content.startswith("!"):
+    print(message.author.name)
+    print('****=======Update presence=========****')
+    await client.wait_until_ready()
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))                                               
+                                                                                                        
+ if message.content.startswith("?"):
+    print(message.author.name)
+    print('****=======Update presence=========****')
+    await client.wait_until_ready()
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))
+                                                
+                                                                                                        
+ if message.content.startswith("hello"):
+    print(message.author.name)
+    print('****=======Update presence=========****')
+    await client.wait_until_ready()
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))
+                                                
+                                                
+ if message.content.startswith("hi"):
+    print(message.author.name)
+    print('****=======Update presence=========****')
+    await client.wait_until_ready()
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+                                                type=ActivityType.watching))
  
  if message.content.startswith("!invite"):
         print(message.author.name)
@@ -251,5 +290,6 @@ async def on_ready():
     await client.wait_until_ready()
     await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
                                                 type=ActivityType.watching))
+	
 	
 client.run(os.getenv('BOT_TOKEN'))
