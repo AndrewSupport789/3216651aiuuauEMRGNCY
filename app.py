@@ -20,7 +20,7 @@ client = commands.Bot(command_prefix='!')
 Clientdiscord = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['web: www.rabbit001.ga', 'With BlackRabbit', 'discord.gg/cZ8GcPF', '!cmds for commands', '!cmds'])
+status = cycle(['web: www.rabbits-gen.cf', 'With BlackRabbit', 'discord.gg/cZ8GcPF', '!cmds for commands', '!cmds'])
 
 client.remove_command('help')
 
