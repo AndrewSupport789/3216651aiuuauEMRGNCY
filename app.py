@@ -20,7 +20,7 @@ client = commands.Bot(command_prefix='!')
 Clientdiscord = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['web: www.rabbits-gen.cf', 'With BlackRabbit', 'discord.gg/cZ8GcPF', '!cmds for commands', '!cmds'])
+status = cycle(['web: www.rabbit001.tk', 'With BlackRabbit', 'discord.gg/cZ8GcPF', '!cmds for commands', '!cmds'])
 
 client.remove_command('help')
 
@@ -303,7 +303,7 @@ async def on_ready():
 @client.event
 async def on_ready():
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| 𝖗𝖆𝖇𝖇𝖎𝖙001.𝖌𝖆 ", 
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨| rabbit001.tk ", 
                                                 type=ActivityType.watching))
 	
 
