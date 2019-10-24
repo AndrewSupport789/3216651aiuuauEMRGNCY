@@ -191,6 +191,16 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
         await message.channel.send('Check your DMs!' + twitter)
+			        
+ if message.content.startswith("!dominos"):
+        print(message.author.name)
+        embed = discord.Embed(title="`Dominos acc`", color=0x400cc1)
+        embed.add_field(name="Your link:", value="https://link-to.net/27527/Dominos", inline=False)
+        embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
+        embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
+        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+        await message.author.send(embed=embed) 
+        await message.channel.send('Check your DMs!' + twitter)
 				        
  if message.content.startswith("!origin"):
         print(message.author.name)
