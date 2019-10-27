@@ -313,8 +313,8 @@ async def on_ready():
 @client.event
 async def on_ready():
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|  http://rabbits-gen.cf ", 
-                                                type=ActivityType.watching))
+    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|  http://rabbits-gen.club ", 
+                                                type=ActivityType.watching)lub
 	
 
 client.run(os.getenv('BOT_TOKEN'))
