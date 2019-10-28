@@ -13,6 +13,8 @@ import os
 
 reminder = 'Do not forget try all links for all accounts!'
 
+owo = "```If you wanna save time join my server and buy **__Supporter__** role for cheap! https://discord.gg/aw3RR6```"
+
 msgg = '```Check your DMs man!```'
 
 client = commands.Bot(command_prefix='!')
@@ -98,7 +100,23 @@ async def on_message(message):
         await message.channel.send('Check your DMs!' + twitter)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
-	
+
+ if message.content.startswith("!help"):
+        print(message.author.name)
+        embed = discord.Embed(color=0xFF09D7)
+        embed.add_field(name="**__Supporter__**", value="You can buy **__Supporter__** role here on my server: https://discord.gg/2ZnMK4m", inline=False)
+        embed.add_field(name="Why?", value="With **__Supporter__** role you don't have to watch ads and you will get accounts almost instantly!", inline=False)
+        await message.channel.send('Check your DMs!')
+        await message.author.send(embed=embed)
+        
+ if message.content.startswith("!supporter"):
+        print(message.author.name)
+        embed = discord.Embed(color=0xFF09D7)
+        embed.add_field(name="**__Supporter__**", value="You can buy **__Supporter__** role here on my server: https://discord.gg/2ZnMK4m", inline=False)
+        embed.add_field(name="Why?", value="With **__Supporter__** role you don't have to watch ads and you will get accounts almost instantly!", inline=False)
+        await message.channel.send('Check your DMs!')
+        await message.author.send(embed=embed)
+             
         
  if message.content.startswith("!stock"):
         print(message.author.name)
@@ -123,6 +141,7 @@ async def on_message(message):
         embed = discord.Embed(title="**COMMANDS**", color=0xFF09D7)
         embed.add_field(name="Visit my website for list of commands:", value="http://bit.ly/gen_commands", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+        embed.add_field(name="**__**__Supporter__**__**", value="You can buy **__Supporter__** role for save your time on my server! https://discord.gg/2ZnMK4m", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
 		
@@ -143,6 +162,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapfp.com/oauth2/authorize?client_id=60496724186339f7376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 		        
  if message.content.startswith("!eset"):
         print(message.author.name)
@@ -154,6 +174,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 			        
  if message.content.startswith("!crunchyroll"):
         print(message.author.name)
@@ -165,6 +186,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
         
  if message.content.startswith("!minecraft"):
         print(message.author.name)
@@ -176,8 +198,8 @@ async def on_message(message):
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
-        
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 		
 		        
  if message.content.startswith("!hulu"):
@@ -191,6 +213,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 			        
  if message.content.startswith("!dominos"):
         print(message.author.name)
@@ -201,6 +224,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 				        
  if message.content.startswith("!origin"):
         print(message.author.name)
@@ -212,6 +236,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 		
 						        
  if message.content.startswith("!uplay"):
@@ -225,6 +250,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 								        
  if message.content.startswith("!steam"):
         print(message.author.name)
@@ -236,6 +262,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 							        
 				        
  if message.content.startswith("!fortnite"):
@@ -248,6 +275,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 		
 				        
  if message.content.startswith("!spotify"):
@@ -260,6 +288,7 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
+        await message.channel.send(owo)
 						        
  if message.content.startswith("!nord"):
         print(message.author.name)
@@ -273,6 +302,7 @@ async def on_message(message):
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(reminder)
+        await message.channel.send(owo)
    						        
  if message.content.startswith("!pinterest"):
         print(message.author.name)
@@ -281,7 +311,8 @@ async def on_message(message):
         embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
         await message.author.send(embed=embed)
-        await message.channel.send('Check your DMs!' + twitter)   		
+        await message.channel.send('Check your DMs!' + twitter)  
+        await message.channel.send(owo)	
 
 
 #embed.add_field(name="link #2:", value="https://link-to.net/27527/pinterest", inline=False)
@@ -316,5 +347,4 @@ async def on_ready():
     await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|  http://rabbits-gen.club ", 
                                                 type=ActivityType.watching))
 	
-
 client.run(os.getenv('BOT_TOKEN'))
