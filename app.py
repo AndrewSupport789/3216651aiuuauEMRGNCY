@@ -13,7 +13,7 @@ import os
 
 reminder = 'Do not forget try all links for all accounts!'
 
-owo = "```If you wanna save time join my server and buy Supporter role for cheap! https://discord.gg/2ZnMK4m```"
+owo = "```enjoy```"
 
 msgg = '```Check your DMs man!```'
 
