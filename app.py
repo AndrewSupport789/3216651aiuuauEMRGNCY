@@ -46,7 +46,7 @@ async def on_message(message):
  message.content = message.content.lower().replace(' ', '')
  await client.wait_until_ready()
  print(message.author.name)
- twitter = ' **And also follow us on Twitter!** https://twitter.com/RGen001?s=09'
+ twitter = ' ;) '
  if message.content.startswith("!hello"):
         print(message.author.name)
         embed = discord.Embed(color=0xFF09D7)
