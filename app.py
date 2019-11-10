@@ -50,7 +50,7 @@ async def on_message(message):
  if message.content.startswith("!hello"):
         print(message.author.name)
         embed = discord.Embed(color=0xFF09D7)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+
         await message.author.send(embed=embed)
         
         
@@ -98,7 +98,7 @@ async def on_message(message):
         msg = 'I sent invite link into your DMs man!'
         embed = discord.Embed(color=0xFF09D7)
         await message.channel.send('Check your DMs!' + twitter)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+
         await message.author.send(embed=embed) 
 
  if message.content.startswith("!help"):
@@ -140,7 +140,6 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="**COMMANDS**", color=0xFF09D7)
         embed.add_field(name="Visit my website for list of commands:", value="http://bit.ly/gen_commands", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         embed.add_field(name="**__**__Supporter__**__**", value="You can buy **__Supporter__** role for save your time on my server! https://discord.gg/2ZnMK4m", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
@@ -150,7 +149,6 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="**COMMANDS**", color=0xFF09D7)
         embed.add_field(name="Visit my website for list of commands:", value="http://bit.ly/gen_commands", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
 	        
@@ -171,7 +169,6 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/EsetKeys2txt", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -182,8 +179,7 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://link-to.net/27527/crunchyroll", inline=False)
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/crunchyroll2", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
-        embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
+        embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)´
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -196,7 +192,6 @@ async def on_message(message):
         embed.add_field(name="Link #3:", value="https://link-to.net/27527/minecrafts", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -210,7 +205,6 @@ async def on_message(message):
         embed.add_field(name="Link #3:", value="https://link-to.net/27527/Hulu3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -221,7 +215,6 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://link-to.net/27527/Dominos", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed) 
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -233,7 +226,6 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/Origin3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -247,7 +239,6 @@ async def on_message(message):
         embed.add_field(name="Link #3:", value="https://link-to.net/27527/Uplay3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -259,7 +250,6 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/Steam2", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -272,7 +262,6 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/fortnite2", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -285,7 +274,6 @@ async def on_message(message):
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/spotify3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
@@ -298,7 +286,6 @@ async def on_message(message):
         embed.add_field(name="Link #3:", value="https://link-to.net/27527/NordVPN3", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(reminder)
@@ -308,7 +295,6 @@ async def on_message(message):
         print(message.author.name)
         embed = discord.Embed(title="`Pinterest acc`", color=0x400cc1)
         embed.add_field(name="Your link:", value="https://link-to.net/27527/pinterest", inline=False)
-        embed.add_field(name="Invite this bot on your server!", value="https://discordapp.com/oauth2/authorize?client_id=604967241863397376&permissions=8&scope=bot", inline=False)
         embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)  
