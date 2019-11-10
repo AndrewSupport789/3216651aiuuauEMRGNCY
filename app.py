@@ -179,7 +179,7 @@ async def on_message(message):
         embed.add_field(name="Your link:", value="https://link-to.net/27527/crunchyroll", inline=False)
         embed.add_field(name="Link #2:", value="https://link-to.net/27527/crunchyroll2", inline=False)
         embed.add_field(name="__**Tutorial:**__", value="https://youtu.be/kJbWiPKP_gg", inline=False)
-        embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)´
+        embed.add_field(name="**__Twitter:**__", value="https://twitter.com/RGen001?s=09", inline=False)
         await message.author.send(embed=embed)
         await message.channel.send('Check your DMs!' + twitter)
         await message.channel.send(owo)
