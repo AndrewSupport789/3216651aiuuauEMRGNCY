@@ -13,7 +13,7 @@ import os
 
 reminder = 'Do not forget try all links for all accounts!'
 
-owo = "```enjoy```"
+owo = "We are sorry but bot will be offline for other servers for few days due low account stock!"
 
 msgg = '```Check your DMs man!```'
 
