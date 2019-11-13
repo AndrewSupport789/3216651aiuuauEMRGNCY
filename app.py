@@ -305,9 +305,6 @@ async def on_message(message):
 		
 
 
-@client.event
-async def on_ready():
-    await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name="OUT OF STOCK, BE PATIENT", 
+
 	
 client.run(os.getenv('BOT_TOKEN'))
