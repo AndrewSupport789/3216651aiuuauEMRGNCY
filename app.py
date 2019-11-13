@@ -59,39 +59,39 @@ async def on_message(message):
     print('****=======Update presence=========****')
     await client.wait_until_ready()
     await message.channel.send('Done, updated!')
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|rabbits-gen.cf ", 
-                                                type=ActivityType.watching))
+    
+                                                
                                                 
                                                         
  if message.content.startswith("!"):
     print(message.author.name)
     print('****=======Update presence=========****')
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|rabbits-gen.cf ", 
-                                                type=ActivityType.watching))                                               
+    
+                                                                                               
                                                                                                         
  if message.content.startswith("?"):
     print(message.author.name)
     print('****=======Update presence=========****')
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|rabbits-gen.cf ", 
-                                                type=ActivityType.watching))
+    
+                                                
                                                 
                                                                                                         
  if message.content.startswith("hello"):
     print(message.author.name)
     print('****=======Update presence=========****')
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|rabbits-gen.cf ", 
-                                                type=ActivityType.watching))
+    
+                                                
                                                 
                                                 
  if message.content.startswith("hi"):
     print(message.author.name)
     print('****=======Update presence=========****')
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name=f"{len(client.guilds)}guilds|!𝙘𝙢𝙙𝙨|rabbits-gen.cf ", 
-                                                type=ActivityType.watching))
+    
+                                                
  
  if message.content.startswith("!invite"):
         print(message.author.name)
@@ -308,6 +308,6 @@ async def on_message(message):
 @client.event
 async def on_ready():
     await client.wait_until_ready()
-    await client.change_presence(activity=Activity(name="OUT OF STOCK, BE PATIENT", type=ActivityType.watching))
+    await client.change_presence(activity=Activity(name="OUT OF STOCK, BE PATIENT", 
 	
 client.run(os.getenv('BOT_TOKEN'))
